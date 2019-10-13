@@ -163,6 +163,19 @@ $(document).ready(function() {
         alert("message sended");
         window.location.href = "index.html";
     })
+    /*test*/
+    document.querySelector(".card-flip").classList.toggle("flip");
+$('.card-flip').bind({
+  click: function() {
+    $('.card-flip .flip').toggleClass('flip-hover');
+  },
+  mouseenter: function() {
+    $('.card-flip .flip').addClass('flip-hover');
+  },
+  mouseleave: function() {
+    $('.card-flip .flip').removeClass('flip-hover');
+  }
+});
 
 
 });
