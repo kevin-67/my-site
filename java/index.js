@@ -157,12 +157,19 @@ $(document).ready(function() {
         $(this).css({"color":"white"}); 
     }); 
 
-
-
     $('.btn-send-message').click(function() {
         alert("message sended");
         window.location.href = "index.html";
-    })
+    });
+    
+    $(".info-btn").click(function() {
+        window.location.href = "Contact.html";
+    });
+    
+    
+      
+    
+    
 
 
 });
