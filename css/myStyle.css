@@ -1,0 +1,574 @@
+/*css style for Final assignment 2019*/
+
+@font-face {
+    font-family: "QuickKiss";
+    src: url("../font/QuickKissPersonalUse-PxlZ.ttf");
+}
+@font-face{
+    font-family :"Typographica";
+    src: url("../font/Typographica-Blp5.ttf");
+}
+@font-face{
+    font-family :"Dosis-bold";
+    src: url("../font/Dosis-bold.ttf");
+}
+@font-face{
+    font-family :"Dosis";
+    src: url("../font/Dosis-SemiBold.ttf");
+}
+@font-face{
+    font-family :"Pompadour";
+    src: url("../font/APompadourSample-lzaZ.ttf");
+}
+@font-face{
+    font-family :"Pompadour-bold";
+    src: url("../font/APompadourBoldSample-n6OR.ttf");
+}
+@font-face{
+    font-family :"Aclonica";
+    src: url("../font/Aclonica.ttf");
+}
+
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar-flag {
+    font-family: "QuickKiss";
+}
+
+.flagimg{
+    height: 30px;
+}
+
+body {
+    padding-top: 59px;
+}
+
+.myNavBar{
+    display: flex;
+    background-color: #95BDF5 !important;
+    background-image: linear-gradient(to left, #A6C4ED,#387FE3);
+    border-bottom: 3px;
+    border-color: #387FE3;
+    border-bottom-style: solid;
+}
+
+
+.onglet{
+    text-align: center!important;
+    width: 152px!important;
+    height: auto!important;
+    border-right:1px solid #D8DCE2;
+    font-family: "Dosis";
+    /*box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);*/
+}
+.my-active{
+    /*width:230px!important;*/
+    font-weight: bold;
+    background-image: url("../images/flocons2.png");
+    font-family: "Dosis-bold";
+    /*box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);*/
+}
+
+.my-nav-bar a:hover{
+    border-bottom: solid 3px #D8DCE2;/*Ajouter une bordure inferieur*/
+    background: rgba(255,255,255,0.2); /*Changer la couleur du fond*/
+    color : white!important;
+    font-family: "Dosis-bold";
+    /*box-shadow: 10px 12px 2px -6px rgba(0,0,0,0.26)!important;*/
+}
+
+.txt-onglet{
+    color:white!important;
+
+}
+
+.footer-background{
+    background-image: linear-gradient(to left, #A6C4ED,#387FE3); 
+}
+
+.my-active-footer{
+    background: rgba(255,255,255,0.5)!important;
+    font-family: "Dosis-bold";
+}
+
+.my-btn-resp{
+    background-color: transparent;
+    color: white;
+    font-family: "Dosis";
+}
+
+.my-btn-resp:hover{
+    border-color: #D8DCE2;
+    color: white;
+}
+
+/*If display is under 768px*/
+@media (max-width: 768px) {
+    .my-btn-resp {
+        padding:2px 10px;
+        font-size:80%;
+        line-height: 1;
+        border-radius:3px;
+        border: solid 1px #D8DCE2;
+
+    }
+    #btn-1-footer{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    #btn-2-footer{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .flagimg-footer{
+        height: 15px;
+        width: auto;
+        margin-right: 6px;
+    }
+    .my-img-center{
+        display: block;
+        margin-left: auto!important;
+        margin-right: auto;
+        width: auto;
+    }
+
+}
+
+/*If display is over 769px*/
+@media (min-width: 769px) {
+    .my-btn-resp {
+        padding:4px 10px;
+        font-size:100%;
+        line-height: 1;
+        border: solid 2px #D8DCE2;
+    }
+    #btn-1-footer{
+        margin-left: 15px;
+        margin-right: 80px;
+    }
+
+    #btn-2-footer{
+        /*margin-left: 10px;*/
+        margin-right: 30px;
+    }
+    .flagimg-footer{
+
+        height: 20px;
+        width: auto;
+        margin-right: 6px;
+    }
+
+}
+
+/*.home-txt{
+font-family: "Typographica";
+font-size: 50px;
+font-weight: bold;
+color: white;
+/*height: 180px;
+width: 500px;
+justify-content: center;
+line-height: 180px; 
+vertical-align:middle!important;
+border:solid;
+}*/
+
+
+/**INDEX/HOMEPAGE PAGE**/
+/*****************************************************/
+
+/*Titls of the head's page*/
+h1{
+    font-family: "Typographica";
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.title-section{
+    font-family: "Aclonica";
+    color:#387FE3;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+/*.my-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-around;
+flex-shrink: 0;   
+}*/
+
+
+/*.card{
+display: flex;
+position: relative;
+flex-wrap: wrap;
+border-radius: 10px;
+height: 515px!important;
+width: 260px!important;
+margin-bottom: 10px;
+flex-direction: column;
+background-color: #F4F6F9;
+box-shadow: 0px 0px 36px -13px rgba(0,0,0,0.66);
+overflow: hidden;     
+}*/
+
+
+.img-home-card1{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/index/christmas_dad.jpeg') 0px -80px;
+}
+
+.img-home-card2{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/index/snow_castle.jpg') 0px 0px;
+}
+
+.img-home-card3{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/index/kukkolankoski.jpg') 0px 0px;
+}
+
+.img-home-card4{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/index/midnight_sun.jpg') 0px 0px;
+}
+
+.img-home-card5{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/index/sauna.jpg') 0px 0px;
+}
+
+.title-footer{
+    font-family: "Pompadour-bold";
+    color:#387FE3;    
+    font-size: 25px;
+}
+
+
+/**LAPLAND PAGE**/
+/*****************************************************/
+
+.lapland-card{
+    border-radius: 10px;
+    height: 520px!important;
+    width: 260px!important;
+    margin-bottom: 10px;
+    background-color: #F4F6F9;
+    box-shadow: 0px 0px 36px -13px rgba(0,0,0,0.66);
+    overflow: hidden;     
+}
+
+.img-lap-card1{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/Lapland/snowmobile.jpg') -140px -80px;
+}
+
+.my-card-body{
+    padding: 10px 10px !important;
+}
+
+.title-lap-card{
+    font-family: "Pompadour-bold";
+    color:#387FE3; 
+    font-size: 25px;
+    margin-bottom: 3px;
+    margin-top: 5px
+}
+
+.text-lap-card{
+    height: 250px;
+}
+
+
+.img-lap-card2{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/Lapland/dog_sledding.jpg') -80px 0px;    
+}
+
+.img-lap-card3{
+    height: 210px;
+    width: 260px;
+    justify-content:center;
+    background:url('../images/Lapland/reinder_safari.jpg') -80px -60px; 
+}
+
+.my-grid-img{ /*The image*/
+    max-width: 100%;
+    max-height:  100%;
+    border: 1px solid #D8DCE2;
+}
+
+.my-img-cfg{ /*Containe the image*/
+    padding: 10px 10px;
+}
+
+.no-padding{
+    padding-right:0;
+    padding-left:0;
+}
+
+/*For the 'gallery' */
+/*The background when select image*/
+.viewer_image_background
+{
+    position: fixed;
+    background-color: rgba(216, 220, 226, 0.93) ;
+    background-image: url("../images/flocons.png");
+    background-size: 40%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index: 2;
+}
+
+/*Contain the image*/
+.viewer_image_container
+{
+    cursor: alias;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed; /*To allow the image to appeare always in center*/
+    z-index: 3;
+}
+
+/*Property of the huge image*/
+.image_in_viewer
+{
+    cursor: alias;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    margin: auto; /*To center the image*/
+    top: 60px;/*To adjust the position of the image in function of the nav bare*/
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    z-index: 3;
+}
+
+/**AURORAS PAGE**/
+/*****************************************************/
+
+figcaption
+{
+    font-style: italic;
+
+}
+
+.my-img-center{
+    width: 50%;
+    margin-left: 10px;
+    max-width: 300px;
+    height: auto;
+
+}
+
+.background-twentytwenty{
+    background-image: linear-gradient(to bottom, #D8DCE2,#FFFFFF);    
+}
+
+#title-twenty-box{
+    margin-top: -30px;
+    margin-bottom: 15px;
+    text-shadow: 0px 5px 5px #7B8087;
+    /*text-shadow: black 0.1em 0.1em 0.2em;*/
+}
+
+.carousel-image{
+    width: 50%;
+    max-width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 350px;
+    /*box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.90);*/
+}
+
+.carousel-control-prev-icon { 
+    background-image: url("../images/Auroras/prev.png") !important;
+    width: 70px!important;
+    height: 70px!important;
+} 
+
+.carousel-control-next-icon { 
+    background-image: url("../images/Auroras/next.png") !important;
+    width: 70px!important;
+    height: 70px!important;
+} 
+
+.my-buton-carousel-style{
+    border-style: solid;
+    border-radius: 40px;
+    border-color: white;
+}
+
+.title-photo-grid-auroras{
+    font-family: "Aclonica";
+    color:#387FE3;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+}
+
+.background_grid_auroras{
+    background-image: url("../images/Auroras/background_grid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 35px;
+}
+
+.aurora-grid-1, .aurora-grid-2, .aurora-grid-3{
+    max-width: 100%;
+    max-height:  100%;
+    border: 1px solid #D8DCE2; 
+}
+
+/**--GUIDE PAGE--**/
+/*****************************************************/
+
+.title-guide-card{
+    text-align: center;
+    font-family: "Pompadour-bold";
+    color:#387FE3; 
+    font-size: 35px;
+}
+
+.card-click-text{
+    font-weight: bold;
+    text-align: center;
+    color:#1725CF;
+}
+
+.my-guide-card-image{
+    height: 240px;
+}
+
+.first-letter{
+    font-weight: bold;
+    color:#387FE3;
+}
+/*Flip card*/
+
+.avatar-card{
+    margin-top: 4%;
+}
+
+.flip-card {
+    background-color: transparent!important;
+    perspective: 900px;
+}
+
+.flip-card-inner {
+    position: relative;
+    border: 3px solid #ECEDEF; 
+    height: 540px!important;
+    width: 295px!important;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 36px -13px rgba(0,0,0,0.66);
+    
+}
+
+.flip-card.flipped .flip-card-inner {   
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #F4F6F9;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    overflow:hidden;
+}
+
+#ge, #fr, btn-send-message{
+    font-family: "Dosis-bold";
+    background-image: linear-gradient(to left, #A6C4ED,#387FE3);
+    color:white;
+    border-radius:7px;
+
+}
+
+/*#fr:hover,#ge:hover{
+    font-family: "Dosis-bold";
+    background-image: linear-gradient(to left, #A6C4ED,#387FE3);
+    color:black;
+    border: 2px solid #ECEDEF; 
+    border-radius: 7px;
+}*/
+
+
+/**--CONTACT PAGE--**/
+/*****************************************************/
+.map-responsive {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;>
+height:0;
+}
+
+.map-responsive iframe {
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.my-map{
+    border: 3px solid #D8DCE2;
+    border-radius: 5%;
+}
+
+.btn-send-message{
+    background-image: linear-gradient(to left, #A6C4ED,#387FE3);
+    color: black;
+    font-family: "Dosis-bold";
+}
+
+.tt{
+    z-index: 0!important;
+}
+
+.tt2{
+    z-index: 5!important;
+}
+
+
+
+
